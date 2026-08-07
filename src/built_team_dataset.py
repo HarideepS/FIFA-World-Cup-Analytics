@@ -71,6 +71,8 @@ summary['Goal_Difference'] = summary['Goals_Scored'] - summary['Goals_Conceded']
 
 summary['Win_Percentage'] = summary['Wins'] / summary['Matches_Played']
 
+summary['Goal_Difference_Per_Match'] = summary['Goal_Difference']/summary['Matches_Played']
+
 # ===================================
 # Validation Checks
 # ===================================
@@ -108,7 +110,8 @@ summary = summary[
         'Goals_Scored',
         'Goals_Conceded',
         'Goal_Difference',
-        'Goals_Per_Match'
+        'Goals_Per_Match',
+        'Goal_Difference_Per_Match'
     ]
 ]
 
@@ -117,5 +120,8 @@ summary = summary.sort_values(
     ascending=False
 )
 
-print(summary.head(3))
 
+summary.to_csv(
+    "data/processed/team_performance_summary.csv",
+    index=False
+)

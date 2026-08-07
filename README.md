@@ -159,7 +159,7 @@ FIFA-World-Cup-Analytics/
 - [ ] Data Cleaning
 - [ ] Exploratory Data Analysis
 - [ ] Statistical Analysis
-- [ ] Machine Learning
+- [ ] Predictive Modeling (optional)
 - [ ] Dashboard Development
 - [ ] Final Report
 

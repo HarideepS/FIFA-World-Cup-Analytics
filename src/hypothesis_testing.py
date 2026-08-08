@@ -6,6 +6,8 @@ from scipy.stats import spearmanr, pearsonr
 
 import matplotlib.pyplot as plt
 
+from pathlib import Path
+
 pd.set_option('display.max_columns', None)
 
 matches = pd.read_csv("data/raw/matches_1930_2022.csv")
@@ -211,4 +213,17 @@ plt.scatter(
 plt.xlabel('FIFA Ranking (Lower is Better)')
 plt.ylabel('Goal Difference Per Match')
 plt.title('FIFA Ranking vs Goal Difference Per Match - 2022 World Cup')
+
+
+project_root = Path(__file__).resolve().parent.parent
+
+visuals_dir = project_root / "visuals" / "hypothesis_1"
+visuals_dir.mkdir(parents=True, exist_ok=True)
+
+plt.savefig(
+    visuals_dir / "fifa_rank_vs_gd_per_match_2022.png",
+    dpi=300,
+    bbox_inches='tight'
+)
+
 plt.show()

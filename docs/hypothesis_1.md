@@ -27,26 +27,22 @@ There is a statistically significant relationship between pre-tournament FIFA ra
 | `Goal_Difference_Per_Match` | Y / Dependent Variable   | Goal difference divided by matches played |
 
 Goal Difference:
-
 Goals Scored − Goals Conceded
 
 Goal Difference Per Match:
-
 Goal Difference ÷ Matches Played
 
-Using GD/Match instead of raw Goal Difference helps account for differences in the number of matches played.
+#### Using GD/Match instead of raw Goal Difference helps account for differences in the number of matches played.
 
 ## Data Preparation
 
 The 64 matches from the 2022 FIFA World Cup were transformed from match-level data into a team-level performance dataset.
 
 Each match was converted into two team-level observations:
-
 Home team's performance
 Away team's performance
 
 This produced:
-
 64 matches → 128 team-match observations → 32 team-level records
 
 The team-level dataset was then used to calculate:
@@ -85,7 +81,6 @@ The negative correlation indicates that higher numerical FIFA rank values (weake
 
 Since:
 0.000355 < 0.05
-
 the relationship is statistically significant at the 5% significance level.
 
 ### Pearson Correlation
@@ -115,7 +110,6 @@ However, the analysis establishes association, not causation. FIFA ranking shoul
 ## Visual Evidence
 
 A scatter plot of:
-
 X: FIFA Ranking
 Y: Goal Difference Per Match
 

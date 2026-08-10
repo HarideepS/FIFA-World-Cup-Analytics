@@ -193,6 +193,29 @@ plt.xlabel('Team Market Value (€ Millions)')
 plt.ylabel('Tournament Progression Level')
 plt.title('Team Market Value vs World Cup Progression - 2022')
 
+progression_mapping = (
+    "Progression Level Mapping\n"
+    "0  Group Stage\n"
+    "1  Round of 16\n"
+    "2  Quarter-finals\n"
+    "3  Semi-finals\n"
+    "4  Runner-up\n"
+    "5  Champion"
+)
+
+plt.text(
+    1.02,
+    0.5,
+    progression_mapping,
+    transform=plt.gca().transAxes,
+    verticalalignment='center',
+    bbox=dict(
+        boxstyle='round,pad=0.5',
+        facecolor='white',
+        edgecolor='gray'
+    )
+)
+
 plt.tight_layout()
 
 project_root = Path(__file__).resolve().parent.parent

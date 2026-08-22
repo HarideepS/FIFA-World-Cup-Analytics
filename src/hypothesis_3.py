@@ -183,8 +183,14 @@ plt.title(
 
 plt.grid(True)
 plt.tight_layout()
-plt.show()
 
+
+plt.savefig(
+    "visuals/hypothesis_3/experience_vs_progression.png",
+    dpi=300,
+    bbox_inches="tight"
+)
+plt.show()
 
 # ============================================================
 # KRUSKAL-WALLIS TEST

@@ -120,9 +120,3 @@ The relationship was not perfectly linear, with several teams deviating from the
 ## Final H1 Conclusion:
 
 Hypothesis #1 is supported. The analysis found a statistically significant negative association between pre-tournament FIFA ranking and Goal Difference Per Match in the 2022 FIFA World Cup. Both Spearman (ρ = -0.5923, p < 0.001) and Pearson (r = -0.5443, p = 0.0013) correlation tests support this finding. Better-ranked teams generally demonstrated stronger goal-difference performance per match, although the relationship represents an association rather than causation.
-
-## 🏆 H1 Status
-
-✅ Hypothesis #1 — COMPLETE
-
-This is the version I'd consider our official H1 documentation, Homie. It captures the question → methodology → data challenge → statistical evidence → decision → interpretation → limitation chain without drowning the reader in implementation details.
